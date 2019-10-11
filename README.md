@@ -1,4 +1,4 @@
-# starter-project
+# Object Bootcamp
 
 ## How to import this project on IntelliJ
 
