@@ -6,3 +6,5 @@ build
 .idea/
 build/
 target/
+/out/production/classes/*
+/out/test/classes/*
