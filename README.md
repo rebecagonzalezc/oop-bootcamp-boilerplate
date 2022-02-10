@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://gitpoint.co/">
-    <img alt="OOP Bootcamp Feb 2022" title="oop-bootcamp" src="https://images.indianexpress.com/2020/06/the-office-759-1.jpg" width="450">
+    <img alt="OOP Bootcamp Feb 2022" title="oop-bootcamp" src="https://c.tenor.com/omNaWg3lke8AAAAC/predator-fire.gif" width="450">
   </a>
 </p>
 
