@@ -1,4 +1,14 @@
-# Object Bootcamp
+<h1 align="center"> Object-Oriented Programming Bootcamp - February 2022 Edition </h1> <br>
+
+<p align="center">
+  <a href="https://gitpoint.co/">
+    <img alt="OOP Bootcamp Feb 2022" title="oop-bootcamp" src="https://images.indianexpress.com/2020/06/the-office-759-1.jpg" width="450">
+  </a>
+</p>
+
+<p align="center">
+  ¯\_(ツ)_/¯
+</p>
 
 ## How to import this project on IntelliJ
 
@@ -6,8 +16,8 @@ Go to `File` > `Open...` > (navigate to `build.gradle`) > `Open` > `Open as Proj
 
 ## How to run tests
 
-There are multiple ways you can do it. If you wanna run all tests at once from the command line, open up a terminal, navigate to this project's root folder and issue `./gradlew clean test`.
+There are multiple ways to do it. 
 
-You can do the same on IntelliJ. Open up the `Project` tab (Command+1) > right click the `src/test/java` folder > `Run 'All Tests'`.
-
-Or you can just right click an individual test class and then `Run` it.
+1. Command Line: Navigate to this project's root folder and run `./gradlew clean test`.
+2. IntelliJ IDEA - All tests: Open up the `Project` tab (Command+1) > right click the `src/test/java` folder > `Run 'All Tests'`.
+3. IntelliJ IDEA - Single test: Right click an individual test class and then `Run` it.
