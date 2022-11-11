@@ -1,4 +1,4 @@
-<h1 align="center"> Object-Oriented Programming Bootcamp - ???? 2022 Edition </h1> <br>
+<h1 align="center"> Object-Oriented Programming Bootcamp - November 2022 Edition </h1> <br>
 
 <p align="center">
   <a href="https://gitpoint.co/">
