@@ -14,7 +14,8 @@ public class Assistant  {
 
   public boolean park(String licenseNumber) {
     for ( Parking parking : parkingLots) {
-      if(parking.haveSpace()){
+      int minFreeSlots = (int) (parking.getTotalSlots() * 0.2);
+      if(parking.availableSpace() > minFreeSlots) {
         return parking.park(licenseNumber);
       }
     }

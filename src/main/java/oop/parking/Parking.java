@@ -8,13 +8,17 @@ public class Parking {
     Set<String> parkedCars;
     private int totalSlots;
 
+    public int getTotalSlots() {
+        return totalSlots;
+    }
+
     public Parking(int totalSlots){
         parkedCars = new HashSet<>();
         this.totalSlots = totalSlots;
     }
 
     public boolean park(String licenseNumber) {
-        if(haveSpace()) {
+        if(availableSpace() > 0) {
             return parkedCars.add(licenseNumber);
         }
         return false;
@@ -28,8 +32,8 @@ public class Parking {
         return parkedCars.remove(licenseNumber);
     }
 
-    public boolean haveSpace() {
-        return parkedCars.size() < totalSlots;
+    public int availableSpace() {
+        return totalSlots - parkedCars.size();
     }
 
     public boolean containsCar(String licenseNumber) {

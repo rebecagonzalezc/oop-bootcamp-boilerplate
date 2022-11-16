@@ -41,5 +41,16 @@ public class AssistantTest {
     assertFalse(assistant.park("MAT-005"));
   }
 
+  @Test
+  public void itShouldParkCarLessThanEightyPercentFull() {
+    Parking parking = new Parking(10);
+    assistant = new Assistant(parking);
+
+    for(int i = 1; i <= 8; i++) {
+      assertTrue(assistant.park("MAT-00" + i));
+    }
+    assertFalse(assistant.park("MAT-009"));
+  }
+
   
 }
