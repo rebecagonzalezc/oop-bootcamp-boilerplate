@@ -51,6 +51,4 @@ public class AssistantTest {
     }
     assertFalse(assistant.park("MAT-009"));
   }
-
-  
 }

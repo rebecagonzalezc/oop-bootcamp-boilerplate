@@ -6,7 +6,8 @@ import java.util.Set;
 
 public class Assistant  {
 
-  Set<Parking> parkingLots;
+  private static final double MIN_FREE_PERCENTAGE_TRESHOLD = 0.2;
+  private Set<Parking> parkingLots;
 
   public Assistant(Parking... parkingLots) {
     this.parkingLots = new HashSet<>(Arrays.asList(parkingLots));
@@ -14,12 +15,19 @@ public class Assistant  {
 
   public boolean park(String licenseNumber) {
     for ( Parking parking : parkingLots) {
-      int minFreeSlots = (int) (parking.getTotalSlots() * 0.2);
-      if(parking.availableSpace() > minFreeSlots) {
+      if(parking.availableSpace() > isCapacityGreaterThanThreshold(parking)) {
         return parking.park(licenseNumber);
       }
     }
     return false;
+  }
+
+  private int isCapacityGreaterThanThreshold(Parking parking) {
+    return (int) (parking.getTotalSlots() * MIN_FREE_PERCENTAGE_TRESHOLD);
+  }
+
+  private int isCapacityCloseToLimit(Parking parking) {
+    return (int) (parking.getTotalSlots() * MIN_FREE_PERCENTAGE_TRESHOLD);
   }
 
   public boolean retrieve(String licenseNumber) {
